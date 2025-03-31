@@ -5,6 +5,8 @@ c = int(c)
 delta = (b**2)-(4*a*c)
 if a == 0:
     print('é uma equação de primeiro grau')
+    zero = -b/c
+    print("o zero da funçao é: ", zero)
     if b < 0:
         print('é uma função decrescente')
     else:
