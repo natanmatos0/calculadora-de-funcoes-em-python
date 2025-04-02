@@ -24,12 +24,15 @@ else:
     if delta < 0:
         print('imaginario')
     else:
-        raizdelta = delta**0.5
-        x1 = (-b+raizdelta)/(2*a)
-        x2 = (-b-raizdelta)/(2*a)
-        valorx2 = 'o valor da segunda raiz é {:.2f}'.format(x2)
-        valorx1 = 'o valor da primeira raiz é {:.2f}'.format(x1)
-        yv = (-b)/2*a
-        xv = -delta/(4*a)
-        print(valorx1, valorx2)
-        print('o ponto mais alto do gráfico esta nas coordenadas {:.2f} e {:.2f}'.format(xv, yv))
+        if a == 0:
+            print("")
+        else:
+            raizdelta = delta**0.5
+            x1 = (-b+raizdelta)/(2*a)
+            x2 = (-b-raizdelta)/(2*a)
+            valorx2 = 'o valor da segunda raiz é {:.2f}'.format(x2)
+            valorx1 = 'o valor da primeira raiz é {:.2f}'.format(x1)
+            yv = (-b)/2*a
+            xv = -delta/(4*a)
+            print(valorx1, valorx2)
+            print('o ponto mais alto do gráfico esta nas coordenadas {:.2f} e {:.2f}'.format(xv, yv))
