@@ -1,8 +1,9 @@
 a, b, c = input('digite os valores a, b e c da equação: ').split()
-a = int(a)
-b = int(b)
-c = int(c)
+a = float(a)
+b = float(b)
+c = float(c)
 delta = (b**2)-(4*a*c)
+print(f"Para os valores {a}, {b} e {c}:")
 if a == 0:
     print('é uma equação de primeiro grau')
     zero = -b/c
